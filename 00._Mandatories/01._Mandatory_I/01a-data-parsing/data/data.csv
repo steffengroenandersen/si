@@ -1,9 +1,0 @@
-key, value
-string,Hello World
-number,1991
-float,19.91
-boolean,true
-null_value:null,
-array,"[1, "two", false, null]"
-object.nested_string,Nested
-object.nested_number,91
