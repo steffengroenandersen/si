@@ -1,6 +1,7 @@
-import * as fs from "fs";
+import csv from "csvtojson";
 import * as xml2js from "xml2js";
-import * as yaml from "js-yaml";
+import * as yaml from "yaml";
+import * as fs from "fs";
 
 export class Parser {
   // JSON
@@ -12,8 +13,9 @@ export class Parser {
   // XML
   async parseXml(filePath: string): Promise<any> {
     const fileContent = await fs.promises.readFile(filePath, "utf8");
+    const parser = new xml2js.Parser({ explicitArray: false, mergeAttrs: true });
     return new Promise<any>((resolve, reject) => {
-      xml2js.parseString(fileContent, (err: any, result: any) => {
+      parser.parseString(fileContent, (err: any, result: any) => {
         if (err) {
           reject(err);
         }
@@ -25,17 +27,18 @@ export class Parser {
   // YAML
   async parseYaml(filePath: string): Promise<any> {
     const fileContent = await fs.promises.readFile(filePath, "utf8");
-    return yaml.load(fileContent);
+    return yaml.parse(fileContent);
   }
 
   // CSV
-  async parseCsv(filePath: string): Promise<void> {
-    console.log("No parser yet...");
+  async parseCsv(filePath: string): Promise<any> {
+    return await csv().fromFile(filePath);
   }
 
-  // TXT (No parser yet)
-  async parseTxt(filePath: string): Promise<void> {
-    console.log("No parser yet...");
+  // TXT
+  async parseTxt(filePath: string): Promise<any> {
+    const fileContent = await fs.promises.readFile(filePath, "utf8");
+    return yaml.parse(fileContent);
   }
 
   // Main parser
