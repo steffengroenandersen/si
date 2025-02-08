@@ -41,16 +41,16 @@ print(json.dumps(csv_data, indent=4))
 # print(json.dumps(yaml_data, indent=4))
 
 
-# TXT ✅
-import yaml
-import json
+# # TXT ✅
+# import yaml
+# import json
 
-def parse_txt_as_yaml(file_path):
-    """Parses the TXT file using PyYAML."""
-    with open(file_path, "r", encoding="utf-8") as file:
-        data = yaml.safe_load(file)
+# def parse_txt_as_yaml(file_path):
+#     """Parses the TXT file using PyYAML."""
+#     with open(file_path, "r", encoding="utf-8") as file:
+#         data = yaml.safe_load(file)
 
-    return data
+#     return data
 
-txt_data = parse_txt_as_yaml("data/data.txt")
-print(json.dumps(txt_data, indent=4))
+# txt_data = parse_txt_as_yaml("data/data.txt")
+# print(json.dumps(txt_data, indent=4))
