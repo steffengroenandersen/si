@@ -1,0 +1,12 @@
+string: "Hello world"
+number: 1991
+boolean: true
+null_value: null
+array:
+  - 1
+  - "two"
+  - false
+  - null
+object:
+  nested_string: "Nested"
+  nested_number: 91
