@@ -17,17 +17,17 @@
 # xml_data = xml_to_json("data/data.xml")
 # print(json.dumps(xml_data, indent=4))
 
-# # CSV 🔴
-# import csv
-# import json
+# CSV 🔴
+import csv
+import json
 
-# def csv_to_json(file_path):
-#     with open(file_path, "r", encoding="utf-8") as file:
-#         reader = csv.DictReader(file)
-#         return list(reader)  # List of dictionaries
+def csv_to_json(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        reader = csv.DictReader(file)
+        return list(reader)
 
-# csv_data = csv_to_json("data/data.csv")
-# print(json.dumps(csv_data, indent=4))
+csv_data = csv_to_json("data/data.csv")
+print(json.dumps(csv_data, indent=4))
 
 # # YAML ✅
 # import yaml
