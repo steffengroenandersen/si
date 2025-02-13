@@ -1,17 +1,56 @@
-<data>
-    <string>Hello world</string>
-    <number>1991</number>
-    <float>19.91</float>
-    <boolean>true</boolean>
-    <null_value>null</null_value>
-    <array>
-        <item>1</item>
-        <item>two</item>
-        <item>false</item>
-        <item>null</item>
-    </array>
-    <object>
-        <nested_string>Nested</nested_string>
-        <nested_number>91</nested_number>
-    </object>
-</data>
+<store>
+  <phones>
+    <phone>
+      <brand>Samsung</brand>
+      <model>Galaxy</model>
+      <version>10</version>
+      <isReleased>true</isReleased>
+      <price>999.99</price>
+      <tags>
+        <tag>premium</tag>
+        <tag>pro</tag>
+      </tags>
+      <previous_version xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </phone>
+    <phone>
+      <brand>Apple</brand>
+      <model>Pro</model>
+      <version>10</version>
+      <isReleased>false</isReleased>
+      <price>999.99</price>
+      <tags>
+        <tag>premium</tag>
+        <tag>pro</tag>
+      </tags>
+      <previous_version xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </phone>
+  </phones>
+  <headphones>
+    <headphone>
+      <brand>Sony</brand>
+      <model>WH-1000XM5</model>
+      <type>Over-ear</type>
+      <wireless>true</wireless>
+      <price>399.99</price>
+      <features>
+        <feature>noise-canceling</feature>
+        <feature>bluetooth</feature>
+        <feature>long battery life</feature>
+      </features>
+      <previous_version xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </headphone>
+    <headphone>
+      <brand>Bose</brand>
+      <model>QuietComfort Ultra</model>
+      <type>Over-ear</type>
+      <wireless>true</wireless>
+      <price>429.99</price>
+      <features>
+        <feature>noise-canceling</feature>
+        <feature>spatial audio</feature>
+        <feature>voice assistant</feature>
+      </features>
+      <previous_version xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </headphone>
+  </headphones>
+</store>

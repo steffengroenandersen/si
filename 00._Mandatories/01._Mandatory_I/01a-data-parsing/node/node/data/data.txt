@@ -1,9 +1,34 @@
-string: Hello world
-number: 1991
-float: 19.91
-boolean: true
-null_value: null
-array: [1, "two", false, null]
-object:
-  nested_string: Nested
-  nested_number: 91
+Store:
+  Phones:
+    - Brand: Samsung
+      Model: Galaxy
+      Version: 10
+      Is Released: true
+      Price: 999.99
+      Tags: premium, pro
+      Previous Version: null
+
+    - Brand: Apple
+      Model: Pro
+      Version: 10
+      Is Released: false
+      Price: 999.99
+      Tags: premium, pro
+      Previous Version: null
+
+  Headphones:
+    - Brand: Sony
+      Model: WH-1000XM5
+      Type: Over-ear
+      Wireless: true
+      Price: 399.99
+      Features: noise-canceling, bluetooth, long battery life
+      Previous Version: null
+
+    - Brand: Bose
+      Model: QuietComfort Ultra
+      Type: Over-ear
+      Wireless: true
+      Price: 429.99
+      Features: noise-canceling, spatial audio, voice assistant
+      Previous Version: null

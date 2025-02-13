@@ -1,2 +1,3 @@
-string, number, float, boolean, null_value, array, object.nested_string, object.nested_number
-Hello world, 1991, 19.91, true, null, "[1, two, false, null]", Nested, 91
+brand,model,version,isReleased,price,tags,previous_version
+Samsung,Galaxy,10,true,999.99,"premium,pro",
+Apple,Pro,10,false,999.99,"premium,pro",

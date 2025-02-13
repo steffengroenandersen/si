@@ -1,12 +1,42 @@
 {
-  "string": "Hello World",
-  "number": 1991,
-  "float": 19.91,
-  "boolean": true,
-  "null_value": null,
-  "array": [1, "two", false, null],
-  "object": {
-    "nested_string": "Nested",
-    "nested_number": 91
-  }
+  "phones": [
+    {
+      "brand": "Samsung",
+      "model": "Galaxy",
+      "version": 10,
+      "isReleased": true,
+      "price": 999.99,
+      "tags": ["premium", "pro"],
+      "previous_version": null
+    },
+    {
+      "brand": "Apple",
+      "model": "Pro",
+      "version": 10,
+      "isReleased": false,
+      "price": 999.99,
+      "tags": ["premium", "pro"],
+      "previous_version": null
+    }
+  ],
+  "headphones": [
+    {
+      "brand": "Sony",
+      "model": "WH-1000XM5",
+      "type": "Over-ear",
+      "wireless": true,
+      "price": 399.99,
+      "features": ["noise-canceling", "bluetooth", "long battery life"],
+      "previous_version": null
+    },
+    {
+      "brand": "Bose",
+      "model": "QuietComfort Ultra",
+      "type": "Over-ear",
+      "wireless": true,
+      "price": 429.99,
+      "features": ["noise-canceling", "spatial audio", "voice assistant"],
+      "previous_version": null
+    }
+  ]
 }
